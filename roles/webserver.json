@@ -1,0 +1,18 @@
+{
+  "name": "webserver",
+  "description": "This is to setup webserver to xyz machine",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+
+  },
+  "chef_type": "role",
+  "run_list": [
+    "recipe[learn_chef_httpd]"
+  ],
+  "env_run_lists": {
+
+  }
+}
