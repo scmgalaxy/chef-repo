@@ -6,6 +6,11 @@
 
 <h1> This is our chef attributes <%=node['learn_chef_httpd’]['greeting'] &></h1>
 
+<% node['learn_chef_httpd']['default'].each do |key, value| -%>
+    <% unless value.empty? -%>
+        <%= key %>=<%= value %>
+    <% end %>
+<% end %>
 
 <table>
 <tr>
